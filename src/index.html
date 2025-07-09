@@ -4,38 +4,95 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-<header>
-    <img src="Riizz_img.jpg" alt="My Photo" class="profile-pic">
-    <h1>Hi, I'm Rizwan!</h1>
-    <p>Sota hua insaan</p>
-    <div class="social">
-        <a href="https://github.com/RIZWAN1428" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/mohd-rizwan-a71981194/" target="_blank">LinkedIn</a>
+<div class="container">
+
+    <!-- LEFT SIDE (Sidebar) -->
+    <div class="sidebar">
+        <img src="Riizz_img.jpg" alt="My Photo" class="profile-pic">
+        <h1>Hi, I'm Rizwan!</h1>
+        <p>Web Developer | Java Enthusiast</p>
+
+        <!-- Navigation links -->
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100006053447973" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/itislearner/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/mohd-rizwan-a71981194/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733561.png" alt="LinkedIn"></a>
+            <a href="mailto:mr659612@gmail.com"><img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Gmail"></a>
+            <a href="https://github.com/RIZWAN1428" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="GitHub"></a>
+        </div>
+
+        <div class="resume">
+            <a href="Resume_uppdated_Rizwan.pdf" download class="btn">Download Resume</a>
+        </div>
     </div>
-</header>
 
-<section class="about">
-    <h2>About Me</h2>
-    <p>I love reading books and learning new technologies.</p>
-</section>
 
-<section class="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>✔ Chat App using Spring Boot</li>
-        <li>✔ Sudoku game using Java</li>
-    </ul>
-</section>
+    <!-- RIGHT SIDE (Main Content) -->
+    <div class="content">
+        <section id="about"class="about">
+            <h2>About Me</h2>
+            <p> Aspiring Software Engineer with 1.4+ years of experience in software development and application support.
+                Proficient in Java, Spring Boot, and REST API development, with a strong problem-solving mindset.</p>
+        </section>
 
-<section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: mr659612@gmail.com</p>
-</section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
 
-<footer>
-    <p>&copy; 2025 Hashtag. All rights reserved.</p>
-</footer>
+            <h3>✔ Chatting App</h3>
+            <p>Built a real-time chat app using Spring Boot, WebSockets, and MySQL.<br>
+                <strong>Tools:</strong> Java, Spring Boot, MySQL, JS, HTML, CSS</p>
+
+            <h3>✔ RESTful API Development</h3>
+            <p>Created a RESTful API with Spring Boot and MVC architecture.<br>
+                <strong>Tools:</strong> Java, Spring Boot</p>
+
+            <h3>✔ Sudoku Game</h3>
+            <p>Developed a GUI Sudoku game with Java Swing & multithreading.<br>
+                <strong>Tools:</strong> Java, Swing</p>
+        </section>
+        <section id="skills"class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
+                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><p>Spring Boot</p></div>
+                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><p>MySQL</p></div>
+                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><p>HTML</p></div>
+                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><p>CSS</p></div>
+                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
+            </div>
+        </section>
+
+
+        <section id="Achievements" class="Achievements">
+            <h2>Achievements & Positions held</h2>
+            <ul>
+            <li>Ranked in the top 3 through out graduation, demonstrating academic excellence.</li>
+                <li>Coordinator of College Coding Club Organized coding competitions and mentorship sessions.</li>
+               <li>Received multiple appreciations for optimizing workflows and improving customer satisfaction at HCL.</li></p>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: mr659612@gmail.com</p>
+        </section>
+        <footer>
+            <p>&copy; 2025 Rizwan. All rights reserved.</p>
+        </footer>
+    </div>
+
+</div> <!-- end of container -->
+
+
 </body>
-</html>

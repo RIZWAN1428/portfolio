@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* body*/
 body {
   font-family: 'Segoe UI', sans-serif;
  background: linear-gradient(to right, lightgray,darkblue, lightblue);
@@ -22,14 +22,17 @@ body {
 .sidebar {
   width: 30%;
   background-color: #112240;
-  padding: 40px 20px;
+  padding: 5px 20px;
   text-align: center;
   position: sticky;
   top: 0;
   height: 100vh;
   border-right: 1px solid #1a2b4c;
+  overflow-y: auto
 }
-
+.sidebar::-webkit-scrollbar {
+  display: none;            /* ✅ hides scrollbar in Chrome */
+}
 /* Profile Picture */
 .profile-pic {
   width: 130px;
@@ -45,15 +48,6 @@ body {
   margin: 15px 0 5px;
 }
 
-.sidebar p {
-  color: #8892b0;
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-
-
-
 /* Resume Button */
 .resume .btn {
   display: inline-block;
@@ -66,13 +60,13 @@ body {
   font-weight: bold;
   transition: 0.3s;
 }
-
+/* Resume button hovery*/
 .resume .btn:hover {
   background-color: #64ffda;
   color: #0a192f;
 }
 
-/* Main Content Area */
+/* Main Content Area or Right side bar*/
 .content {
   width: 70%;
   padding: 40px 30px;
@@ -86,8 +80,14 @@ section {
   padding: 25px 30px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
 }
-
+/* section hover*/
+section:hover {
+ transform: translateY(-8px); /* Lift up */
+   box-shadow: 0 12px 20px rgba(100, 255, 218, 0.2); /* Glow */
+}
+/* Section heading 2*/
 section h2 {
   color: #64ffda;
   border-bottom: 2px solid #64ffda;
@@ -95,13 +95,13 @@ section h2 {
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
-
+/* Section heading 3*/
 section h3 {
   color: #89b4fa;
   margin-top: 20px;
   font-size: 1.2rem;
 }
-
+/* Section paragraph*/
 section p {
   color: #8892b0;
   font-size: 0.95rem;
@@ -133,9 +133,7 @@ footer {
   transform: scale(1.05);
 }
 
-section:hover {
-  box-shadow: 0 0 20px rgba(100, 255, 218, 0.7);
-}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -200,12 +198,34 @@ section:hover {
   padding-left: 20px;
   color: #8892b0;
 }
+
 .Achievements li {
   margin-bottom: 10px;
   line-height: 1.5;
 }
+/*project-image*/
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
 
-/* Responsive Design */
+.project-image {
+  position: absolute;
+  bottom: 15px;
+  right: 80px;
+  width: 250px;
+}
+.project-illustration {
+  width: 130%;
+  max-width: 500px;
+  opacity: 0.15;
+}
+
+
+/* Responsive Design (Mobile friendly)*/
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -249,5 +269,4 @@ section:hover {
     font-size: 0.9rem;
   }
 }
-
 

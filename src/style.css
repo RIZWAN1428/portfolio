@@ -22,14 +22,17 @@ body {
 .sidebar {
   width: 30%;
   background-color: #112240;
-  padding: 40px 20px;
+  padding: 5px 20px;
   text-align: center;
   position: sticky;
   top: 0;
   height: 100vh;
   border-right: 1px solid #1a2b4c;
+  overflow-y: auto
 }
-
+.sidebar::-webkit-scrollbar {
+  display: none;            /* ✅ hides scrollbar in Chrome */
+}
 /* Profile Picture */
 .profile-pic {
   width: 130px;
@@ -63,7 +66,7 @@ body {
   color: #0a192f;
 }
 
-/* Main Content Area */
+/* Main Content Area or Right side bar*/
 .content {
   width: 70%;
   padding: 40px 30px;
@@ -98,6 +101,21 @@ section h3 {
   margin-top: 20px;
   font-size: 1.2rem;
 }
+/* Section heading hover and link remove */
+.section-h {
+  text-decoration: none;
+  display: inline-block; /* important for transform */
+    transition: transform 0.2s;
+    gap: 3px;
+ }
+ .section-h:hover {
+     transform: translateY(-3px);
+ }
+ /* Link icon */
+ .icon {
+    fill: currentColor;
+    vertical-align: middle;
+ }
 /* Section paragraph*/
 section p {
   color: #8892b0;
@@ -214,10 +232,57 @@ footer {
   bottom: 15px;
   right: 80px;
   width: 250px;
+
 }
 .project-illustration {
   width: 130%;
   max-width: 500px;
   opacity: 0.15;
+}
+
+
+/* Responsive Design (Mobile friendly)*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  header, section, footer {
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+
+  .social a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.9rem;
+  }
 }
 

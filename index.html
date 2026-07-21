@@ -1,129 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Mohd Rizwan — Applied AI / Full-Stack Engineer</title>
+<meta name="description" content="Portfolio of Mohd Rizwan, Applied AI & Full-Stack Engineer specializing in computer vision, LLM integration and graph databases.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  })();
+</script>
 </head>
-
 <body>
+
 <div class="container">
 
-    <!-- LEFT SIDE (Sidebar) -->
-    <div class="sidebar">
-        <img src="Riizz_img.jpg" alt="My Photo" class="profile-pic">
-        <h1>Hi, I'm Rizwan!</h1>
-        <p>FullStack Developer</p>
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="photo-frame">
+        <img src="Riizz_img.jpg" alt="Mohd Rizwan" class="profile-pic">
+        <span class="tag-corner tl"></span>
+        <span class="tag-corner tr"></span>
+        <span class="tag-corner bl"></span>
+        <span class="tag-corner br"></span>
+        <span class="frame-label"></span>
+      </div>
 
-        <!-- Navigation links -->
-        <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#Achievements">Achievements</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <h1>Mohd Rizwan</h1>
+      <p class="role">Applied AI / Full-Stack Engineer</p>
+      <p class="location">📍 Delhi NCR, India</p>
 
-        <!-- Social Icons -->
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100006053447973" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/itislearner/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/mohd-rizwan-a71981194/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733561.png" alt="LinkedIn"></a>
-            <a href="mailto:mr659612@gmail.com"><img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Gmail"></a>
-            <a href="https://github.com/RIZWAN1428" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="GitHub"></a>
-        </div>
-
-        <div class="resume">
-            <a href="Resume_Updated_Rizwan.pdf" download class="btn">Download Resume</a>
-        </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
 
+    <div class="sidebar-bottom">
+      <div class="social-icons">
+        <a href="https://github.com/RIZWAN1428" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .32.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mohd-rizwan-a71981194/" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a href="mailto:mr659612@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 2.4-9 6.3-9-6.3V19h18V6.4ZM3.5 5l8.5 5.95L20.5 5h-17Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/itislearner/" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.6 1.8c.46-.16 1.26-.35 2.43-.4C9.3 1.34 9.68 1.33 12 1.33Zm0 1.98c-3.15 0-3.5.01-4.74.07-.96.04-1.48.2-1.82.34-.46.18-.79.39-1.13.73-.34.34-.55.67-.73 1.13-.14.34-.3.86-.34 1.82-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.96.2 1.48.34 1.82.18.46.39.79.73 1.13.34.34.67.55 1.13.73.34.14.86.3 1.82.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.82-.34.46-.18.79-.39 1.13-.73.34-.34.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.96-.2-1.48-.34-1.82a3.02 3.02 0 0 0-.73-1.13 3.02 3.02 0 0 0-1.13-.73c-.34-.14-.86-.3-1.82-.34-1.24-.06-1.59-.07-4.74-.07Zm0 3.37a4.45 4.45 0 1 1 0 8.9 4.45 4.45 0 0 1 0-8.9Zm0 1.98a2.47 2.47 0 1 0 0 4.94 2.47 2.47 0 0 0 0-4.94Zm4.63-2.2a1.04 1.04 0 1 1 0 2.08 1.04 1.04 0 0 1 0-2.08Z"/></svg>
+        </a>
+      </div>
 
-    <!-- RIGHT SIDE (Main Content) -->
-    <div class="content">
-        <section id="about"class="about">
-            <h2>About Me</h2>
-            <p> Aspiring Software Engineer with 1.4+ years of experience in software development and application support.
-                Proficient in HTML, CSS, Java, Spring Boot, and REST API development, with a strong problem-solving mindset.</p>
-        </section>
+      <a href="Resume_Rizwan.pdf" download class="btn-download">Download Résumé</a>
+      <p class="sidebar-footnote">Open to Full-Stack / AI Engineer roles · Pan-India</p>
+    </div>
+  </aside>
 
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project-content">
-                <div class="project-text">
-                    <a href="https://github.com/RIZWAN1428/expense-tracker"  target="_blank" class="section-h">
-                        <h3>
-                        ✔ Expense Tracker(Frontend)  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 24 24">
-                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
-                            <path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v5h2V5z"/>
-                            <path fill="none" d="M0 0h24v24H0z"/>
-                        </svg>
-                        </h3></a>
-                    <p>Built a frontend using Angular, HTML, CSS and JavaScript.<br>
-                        <strong>Tools:</strong>  Angular, JS, HTML, CSS</p>
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="content">
 
-                    <a href="https://github.com/RIZWAN1428/expense-trackerwo" target="_blank" class="section-h">
-                        <h3>✔ Expense Tracker(Backend) <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 24 24">
-                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
-                            <path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v5h2V5z"/>
-                            <path fill="none" d="M0 0h24v24H0z"/>
-                        </svg>
-                        </h3></a>
-                    <p>Built a backend using Java, SpringBoot, MySQL, Postman.<br>
-                        <strong>Tools:</strong> Java, Spring Boot, MySQL, Postman.</p>
+    <!-- ABOUT -->
+    <section id="about" class="panel hero">
+      <p class="eyebrow">// overview</p>
+      <h2 class="hero-heading">Building the applied-AI layer of healthcare software.</h2>
+      <p class="hero-text">
+        AI-integrated full-stack engineer with production experience shipping computer-vision, LLM, and graph-database features across web and
+        healthcare products. Comfortable across the stack– Angular, Python, Java/Spring, REST APIs– with hands-on delivery of applied-AI features
+        (YOLO/R-CNN model training, LLM chatbots, RAG-style retrieval) end to end.
+      </p>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-num" data-counter data-target="2.5" data-suffix="+" data-decimals="1">2.5+</span>
+          <span class="stat-label">Years of experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-counter data-target="95" data-suffix="%" data-decimals="0">95%</span>
+          <span class="stat-label">CV model accuracy</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-counter data-target="1000" data-suffix="+" data-decimals="0" data-comma="true">1,000+</span>
+          <span class="stat-label">Daily active users served</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-counter data-target="9.13" data-suffix="" data-decimals="2">9.13</span>
+          <span class="stat-label">CGPA / 10.0</span>
+        </div>
+      </div>
+    </section>
 
-                    <a href="https://github.com/RIZWAN1428/ChitChat" target="_blank" class="section-h"> <h3>
-                        ✔ Chatting App <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 24 24">
-                        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
-                        <path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v5h2V5z"/>
-                        <path fill="none" d="M0 0h24v24H0z"/>
-                    </svg>
-                    </h3></a>
-                    <p>Built a real-time chat app using Spring Boot, WebSockets, and MySQL.<br>
-                        <strong>Tools:</strong> Java, Spring Boot, MySQL, JS, HTML, CSS</p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="panel">
+      <p class="eyebrow">// experience</p>
+      <h2>Work History</h2>
 
-
-                </div>
-
-                <div class="project-image">
-                    <img src="undraw_building-a-website_1wrp.png" class="project-illustration" alt="Code Icon">
-
-                </div>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <div class="timeline-head">
+              <h3>Software Engineer</h3>
+              <span class="timeline-date">Jan 2026 – Present</span>
             </div>
-        </section>
-
-        <section id="skills"class="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
-                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><p>Spring Boot</p></div>
-                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><p>MySQL</p></div>
-                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><p>HTML</p></div>
-                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><p>CSS</p></div>
-                <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
-            </div>
-        </section>
-
-
-        <section id="Achievements" class="Achievements">
-            <h2>Achievements & Positions held</h2>
+            <p class="timeline-org">MatheSis Labs, Noida</p>
             <ul>
-            <li>Ranked in the top 3 through out graduation, demonstrating academic excellence.</li>
-                <li>Coordinator of College Coding Club Organized coding competitions and mentorship sessions.</li>
-               <li>Received multiple appreciations for optimizing workflows and improving customer satisfaction at HCL.</li></p>
+              <li>Built full-stack features for a healthcare application using Angular, HTML, CSS, JavaScript and Python, serving 1,000+ daily active users.</li>
+              <li>Trained and deployed computer-vision models (YOLO, R-CNN) for automated dental disease detection, reaching up to 95% accuracy.</li>
+              <li>Built and integrated an LLM-based chatbot, including prompt design and response grounding, to improve user engagement.</li>
+              <li>Designed a Neo4j-based rule engine, containerized with Docker, and exposed it to the frontend via REST APIs.</li>
             </ul>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact Me</h2>
-            <p>Email: mr659612@gmail.com</p>
-        </section>
-        <footer>
-            <p>&copy; 2025 Rizwan. All rights reserved.</p>
-        </footer>
-    </div>
+          </div>
+        </li>
 
-</div> <!-- end of container -->
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <div class="timeline-head">
+              <h3>Developer Intern</h3>
+              <span class="timeline-date">Jul 2025 – Dec 2025</span>
+            </div>
+            <p class="timeline-org">MatheSis Labs, Noida</p>
+            <ul>
+              <li>Built backend features using Java, Spring MVC and MySQL across 5+ product modules.</li>
+              <li>Developed and tested REST APIs and supported database design/queries using SQL.</li>
+              <li>Followed SDLC practices under senior engineer review; delivered features within sprint timelines.</li>
+            </ul>
+          </div>
+        </li>
 
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <div class="timeline-head">
+              <h3>Analyst</h3>
+              <span class="timeline-date">Nov 2022 – Mar 2024</span>
+            </div>
+            <p class="timeline-org">HCLTech, Noida</p>
+            <ul>
+              <li>Supported large-scale enterprise applications, maintaining 96% SLA compliance.</li>
+              <li>Diagnosed application logs, database issues and service failures to improve system reliability.</li>
+              <li>Partnered with development and support teams to cut recurring incidents by 25%.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="panel">
+      <p class="eyebrow">// projects</p>
+      <h2>Selected Work</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="project-tag">Production · Healthcare AI</span>
+          <h3>AI-Based Healthcare Application</h3>
+          <p>End-to-end CBCT/DICOM 3D visualization pipeline for dental disease detection using YOLO on
+             volumetric imaging data, with refined Angular UI and data flow between front and backend services.</p>
+          <div class="chip-row">
+            <span class="chip">Angular</span><span class="chip">Python</span><span class="chip">YOLO</span><span class="chip">DICOM</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">Personal</span>
+          <h3>Expense Tracker</h3>
+          <p>Full-stack expense tracker — Angular frontend, Java/Spring Boot backend with complete CRUD
+             operations, clean SOA-style REST APIs, validated with automated tests under concurrent access.</p>
+          <div class="chip-row">
+            <span class="chip">Angular</span><span class="chip">Spring Boot</span><span class="chip">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/RIZWAN1428/expense-tracker" target="_blank">Frontend repo ↗</a>
+            <a href="https://github.com/RIZWAN1428/expense-trackerwo" target="_blank">Backend repo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">Personal</span>
+          <h3>Chit Chat — Real-Time Messaging</h3>
+          <p>Java-based backend supporting real-time messaging between users, with WebSocket endpoints,
+             session management and MySQL persistence.</p>
+          <div class="chip-row">
+            <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">WebSockets</span><span class="chip">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/RIZWAN1428/ChitChat" target="_blank">View repo ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel">
+      <p class="eyebrow">// skills</p>
+      <h2>Technical Toolkit</h2>
+
+      <div class="skills-block">
+        <h4>Languages</h4>
+        <div class="chip-row">
+          <span class="chip">Java</span><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">HTML</span><span class="chip">CSS</span>
+        </div>
+      </div>
+      <div class="skills-block">
+        <h4>Applied AI</h4>
+        <div class="chip-row">
+          <span class="chip accent">LLM Integration</span><span class="chip accent">Prompt Engineering</span><span class="chip accent">RAG Retrieval</span><span class="chip accent">YOLO / R-CNN</span>
+        </div>
+      </div>
+      <div class="skills-block">
+        <h4>Frameworks</h4>
+        <div class="chip-row">
+          <span class="chip">Spring Boot</span><span class="chip">Spring MVC</span><span class="chip">Angular</span><span class="chip">REST APIs</span>
+        </div>
+      </div>
+      <div class="skills-block">
+        <h4>Databases</h4>
+        <div class="chip-row">
+          <span class="chip">MySQL</span><span class="chip">SQL</span><span class="chip">Neo4j (Graph DB)</span>
+        </div>
+      </div>
+      <div class="skills-block">
+        <h4>Cloud &amp; DevOps</h4>
+        <div class="chip-row">
+          <span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Git / GitHub</span><span class="chip">Maven</span><span class="chip">CI/CD</span>
+        </div>
+      </div>
+      <div class="skills-block">
+        <h4>Core CS</h4>
+        <div class="chip-row">
+          <span class="chip">Data Structures &amp; Algorithms</span><span class="chip">OOP</span><span class="chip">API Design</span><span class="chip">Microservices</span><span class="chip">Concurrent Systems</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="panel">
+      <p class="eyebrow">// education</p>
+      <h2>Education</h2>
+      <div class="edu-row">
+        <div>
+          <h3>B.Tech, Computer Science</h3>
+          <p class="timeline-org">Maulana Azad National Urdu University, Hyderabad</p>
+        </div>
+        <div class="edu-meta">
+          <span class="timeline-date">Jul 2018 – Jun 2022</span>
+          <span class="cgpa-badge">CGPA 9.13 / 10.0</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="panel">
+      <p class="eyebrow">// achievements</p>
+      <h2>Achievements &amp; Positions Held</h2>
+      <ul class="achievement-list">
+        <li>Ranked in the top 3 throughout school and college for academic performance.</li>
+        <li>Co-founder, College Coding Club — organized coding competitions and peer-mentorship sessions.</li>
+        <li>Gold Medal, school-level Mathematics Competition; 1st Rank, district-level Speech Competition.</li>
+        <li>Winner, inter-college cricket and carrom tournaments.</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel contact-panel">
+      <p class="eyebrow">// contact</p>
+      <h2>Let's build something.</h2>
+      <p class="hero-text">Open to Full-Stack / AI Engineer roles across India.</p>
+      <div class="contact-grid">
+        <a href="mailto:mr659612@gmail.com" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span>mr659612@gmail.com</span>
+        </a>
+        <a href="tel:+919616675591" class="contact-item">
+          <span class="contact-label">Phone</span>
+          <span>+91-9616675591</span>
+        </a>
+        <a href="https://github.com/RIZWAN1428" target="_blank" class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <span>github.com/RIZWAN1428</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mohd-rizwan-a71981194/" target="_blank" class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span>mohd-rizwan</span>
+        </a>
+      </div>
+      <a href="https://wa.me/919616675591?text=Hi" target="_blank" rel="noopener noreferrer" class="btn-download btn-cta">Say Hello</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Mohd Rizwan. Built with intent.</p>
+    </footer>
+
+  </main>
+
+</div>
+
+<!-- Theme Toggle Button -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+  <!-- Sun Icon (shown in dark mode) -->
+  <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <!-- Moon Icon (shown in light mode) -->
+  <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+
+<!-- Scroll to Top Button (with progress circle) -->
+<button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+  <svg class="progress-circle" width="48" height="48" viewBox="0 0 48 48">
+    <circle class="progress-circle-bg" cx="24" cy="24" r="20" fill="none" stroke="var(--line)" stroke-width="4"></circle>
+    <circle class="progress-circle-bar" cx="24" cy="24" r="20" fill="none" stroke="var(--accent)" stroke-width="4" stroke-dasharray="125.66" stroke-dashoffset="125.66"></circle>
+  </svg>
+  <svg class="arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</button>
+
+<script>
+  // Theme Toggle Logic
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
+
+  // Scroll to Top Logic
+  const scrollToTopBtn = document.getElementById('scroll-to-top');
+  const progressCircleBar = document.querySelector('.progress-circle-bar');
+  const pathLength = 125.66; // 2 * PI * r (r=20)
+
+  const updateScrollProgress = () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    if (scrollTop > 200) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
+    
+    if (scrollHeight > 0) {
+      const progress = scrollTop / scrollHeight;
+      const offset = pathLength - (progress * pathLength);
+      progressCircleBar.style.strokeDashoffset = offset;
+    }
+  };
+
+  window.addEventListener('scroll', updateScrollProgress);
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  updateScrollProgress(); // Initial run
+
+  // Counter Animation Logic
+  const counters = document.querySelectorAll('[data-counter]');
+  const animateCounter = (counter) => {
+    const target = parseFloat(counter.getAttribute('data-target'));
+    const suffix = counter.getAttribute('data-suffix') || '';
+    const decimals = parseInt(counter.getAttribute('data-decimals') || '0', 10);
+    const useComma = counter.hasAttribute('data-comma');
+    
+    const duration = 2000; // 2 seconds animation duration
+    const startTime = performance.now();
+    
+    const updateCount = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      // Easing: easeOutQuad
+      const easeProgress = progress * (2 - progress);
+      const currentValue = easeProgress * target;
+      
+      let formattedValue = currentValue.toFixed(decimals);
+      if (useComma) {
+        formattedValue = Math.floor(currentValue).toLocaleString('en-US');
+      }
+      
+      counter.textContent = formattedValue + suffix;
+      
+      if (progress < 1) {
+        requestAnimationFrame(updateCount);
+      } else {
+        let finalValue = target.toFixed(decimals);
+        if (useComma) {
+          finalValue = target.toLocaleString('en-US');
+        }
+        counter.textContent = finalValue + suffix;
+      }
+    };
+    requestAnimationFrame(updateCount);
+  };
+
+  // IntersectionObserver to trigger counter when stats become visible
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  counters.forEach(counter => {
+    counterObserver.observe(counter);
+  });
+</script>
 </body>
+</html>

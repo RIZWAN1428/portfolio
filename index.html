@@ -24,7 +24,7 @@
   <aside class="sidebar">
     <div class="sidebar-top">
       <div class="photo-frame">
-        <img src="Riizz_img.jpg" alt="Mohd Rizwan" class="profile-pic">
+        <img src="Rizwan_image.jpg" alt="Mohd Rizwan" class="profile-pic">
         <span class="tag-corner tl"></span>
         <span class="tag-corner tr"></span>
         <span class="tag-corner bl"></span>
@@ -113,9 +113,10 @@
             </div>
             <p class="timeline-org">MatheSis Labs, Noida</p>
             <ul>
-              <li>Built full-stack features for a healthcare application using Angular, HTML, CSS, JavaScript and Python, serving 1,000+ daily active users.</li>
-              <li>Trained and deployed computer-vision models (YOLO, R-CNN) for automated dental disease detection, reaching up to 95% accuracy.</li>
-              <li>Built and integrated an LLM-based chatbot, including prompt design and response grounding, to improve user engagement.</li>
+              <li>Engineered a production full-stack dataset platform using Django, PostgreSQL, OpenCV, Bootstrap, HTML, and CSS to process retinal fundus image datasets with multi-factor ETL pipeline checks and reviewer verification workflows for healthcare AI models.</li>
+              <li>Built full-stack features for a healthcare application using Angular, Python, and REST APIs, serving 1,000+ daily active users.</li>
+              <li>Trained and deployed computer-vision models (YOLO, R-CNN) for automated dental &amp; retinal imaging analysis, reaching up to 95% accuracy.</li>
+              <li>Built and integrated LLM-based chatbot systems, incorporating custom prompt design, RAG-style grounding, and fallback response strategies.</li>
               <li>Designed a Neo4j-based rule engine, containerized with Docker, and exposed it to the frontend via REST APIs.</li>
             </ul>
           </div>
@@ -163,9 +164,29 @@
       <div class="project-grid">
         <article class="project-card">
           <span class="project-tag">Production · Healthcare AI</span>
+          <h3>Retinal Fundus Image ETL Dataset Platform</h3>
+          <p>Full-stack healthcare application for full eyes and retinal fundus imaging. Features multi-factor ETL pipeline validation, reviewer verification workflows, and verified dataset storage for healthcare AI production.</p>
+          <div class="chip-row">
+            <span class="chip">Django</span><span class="chip">PostgreSQL</span><span class="chip">OpenCV</span><span class="chip">ETL Pipelines</span><span class="chip">Bootstrap</span><span class="chip">HTML/CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">Personal · AI &amp; RAG</span>
+          <h3>Rizz-AI — Personal Knowledge Chatbot</h3>
+          <p>Interactive Django web application allowing visitors to ask questions about my background. Sourced from a custom Q&amp;A knowledge base using local sentence-transformers, FAISS vector search, Groq API LLM with a silent raw-fact fallback, and vanilla web UI.</p>
+          <div class="chip-row">
+            <span class="chip">Django</span><span class="chip">FAISS</span><span class="chip">sentence-transformers</span><span class="chip">Groq API</span><span class="chip">RAG</span><span class="chip">SQLite</span><span class="chip">Render</span>
+          </div>
+          <div class="project-links">
+            <a href="https://rizz-ai-bbeg.onrender.com/" target="_blank" rel="noopener noreferrer">Try Rizz-AI Live ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">Production · Healthcare AI</span>
           <h3>AI-Based Healthcare Application</h3>
-          <p>End-to-end CBCT/DICOM 3D visualization pipeline for dental disease detection using YOLO on
-             volumetric imaging data, with refined Angular UI and data flow between front and backend services.</p>
+          <p>End-to-end CBCT/DICOM 3D visualization pipeline for dental disease detection using YOLO on volumetric imaging data, with refined Angular UI and data flow between front and backend services.</p>
           <div class="chip-row">
             <span class="chip">Angular</span><span class="chip">Python</span><span class="chip">YOLO</span><span class="chip">DICOM</span>
           </div>
@@ -174,8 +195,7 @@
         <article class="project-card">
           <span class="project-tag">Personal</span>
           <h3>Expense Tracker</h3>
-          <p>Full-stack expense tracker — Angular frontend, Java/Spring Boot backend with complete CRUD
-             operations, clean SOA-style REST APIs, validated with automated tests under concurrent access.</p>
+          <p>Full-stack expense tracker — Angular frontend, Java/Spring Boot backend with complete CRUD operations, clean SOA-style REST APIs, validated with automated tests under concurrent access.</p>
           <div class="chip-row">
             <span class="chip">Angular</span><span class="chip">Spring Boot</span><span class="chip">MySQL</span>
           </div>
@@ -188,8 +208,7 @@
         <article class="project-card">
           <span class="project-tag">Personal</span>
           <h3>Chit Chat — Real-Time Messaging</h3>
-          <p>Java-based backend supporting real-time messaging between users, with WebSocket endpoints,
-             session management and MySQL persistence.</p>
+          <p>Java-based backend supporting real-time messaging between users, with WebSocket endpoints, session management and MySQL persistence.</p>
           <div class="chip-row">
             <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">WebSockets</span><span class="chip">MySQL</span>
           </div>
@@ -208,31 +227,31 @@
       <div class="skills-block">
         <h4>Languages</h4>
         <div class="chip-row">
-          <span class="chip">Java</span><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">HTML</span><span class="chip">CSS</span>
+          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">SQL</span>
         </div>
       </div>
       <div class="skills-block">
-        <h4>Applied AI</h4>
+        <h4>Applied AI &amp; RAG</h4>
         <div class="chip-row">
-          <span class="chip accent">LLM Integration</span><span class="chip accent">Prompt Engineering</span><span class="chip accent">RAG Retrieval</span><span class="chip accent">YOLO / R-CNN</span>
+          <span class="chip accent">RAG Retrieval</span><span class="chip accent">FAISS Vector Search</span><span class="chip accent">sentence-transformers</span><span class="chip accent">Groq API LLM</span><span class="chip accent">OpenCV</span><span class="chip accent">YOLO / R-CNN</span><span class="chip accent">Prompt Engineering</span><span class="chip accent">LLM Integration</span>
         </div>
       </div>
       <div class="skills-block">
-        <h4>Frameworks</h4>
+        <h4>Frameworks &amp; Web</h4>
         <div class="chip-row">
-          <span class="chip">Spring Boot</span><span class="chip">Spring MVC</span><span class="chip">Angular</span><span class="chip">REST APIs</span>
+          <span class="chip">Django</span><span class="chip">Bootstrap</span><span class="chip">Spring Boot</span><span class="chip">Spring MVC</span><span class="chip">Angular</span><span class="chip">REST APIs</span>
         </div>
       </div>
       <div class="skills-block">
-        <h4>Databases</h4>
+        <h4>Databases &amp; Storage</h4>
         <div class="chip-row">
-          <span class="chip">MySQL</span><span class="chip">SQL</span><span class="chip">Neo4j (Graph DB)</span>
+          <span class="chip">PostgreSQL</span><span class="chip">SQLite</span><span class="chip">MySQL</span><span class="chip">Neo4j (Graph DB)</span>
         </div>
       </div>
       <div class="skills-block">
-        <h4>Cloud &amp; DevOps</h4>
+        <h4>Pipelines, Cloud &amp; DevOps</h4>
         <div class="chip-row">
-          <span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Git / GitHub</span><span class="chip">Maven</span><span class="chip">CI/CD</span>
+          <span class="chip">ETL Pipelines</span><span class="chip">Render</span><span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Git / GitHub</span><span class="chip">Maven</span><span class="chip">CI/CD</span>
         </div>
       </div>
       <div class="skills-block">
@@ -275,26 +294,34 @@
     <section id="contact" class="panel contact-panel">
       <p class="eyebrow">// contact</p>
       <h2>Let's build something.</h2>
-      <p class="hero-text">Open to Full-Stack / AI Engineer roles across India.</p>
+      <p class="hero-text">Open to Full-Stack / AI Engineer roles across India. Have questions? Ask my personal AI chatbot anytime!</p>
       <div class="contact-grid">
+        <a href="https://rizz-ai-bbeg.onrender.com/" target="_blank" rel="noopener noreferrer" class="contact-item highlight-ai">
+          <span class="contact-label">🤖 Rizz-AI Chatbot</span>
+          <span class="contact-val">Ask about me anything ↗</span>
+          <span class="contact-sub">Interactive Q&amp;A AI Assistant</span>
+        </a>
         <a href="mailto:mr659612@gmail.com" class="contact-item">
           <span class="contact-label">Email</span>
-          <span>mr659612@gmail.com</span>
+          <span class="contact-val">mr659612@gmail.com</span>
         </a>
         <a href="tel:+919616675591" class="contact-item">
           <span class="contact-label">Phone</span>
-          <span>+91-9616675591</span>
+          <span class="contact-val">+91-9616675591</span>
         </a>
         <a href="https://github.com/RIZWAN1428" target="_blank" class="contact-item">
           <span class="contact-label">GitHub</span>
-          <span>github.com/RIZWAN1428</span>
+          <span class="contact-val">github.com/RIZWAN1428</span>
         </a>
         <a href="https://www.linkedin.com/in/mohd-rizwan-a71981194/" target="_blank" class="contact-item">
           <span class="contact-label">LinkedIn</span>
-          <span>mohd-rizwan</span>
+          <span class="contact-val">mohd-rizwan</span>
         </a>
       </div>
-      <a href="https://wa.me/919616675591?text=Hi" target="_blank" rel="noopener noreferrer" class="btn-download btn-cta">Say Hello</a>
+      <div class="contact-actions">
+        <a href="https://wa.me/919616675591?text=Hi" target="_blank" rel="noopener noreferrer" class="btn-download btn-cta">Say Hello</a>
+        <a href="https://rizz-ai-bbeg.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-download btn-cta btn-ai-chat">💬 Chat with Rizz-AI ↗</a>
+      </div>
     </section>
 
     <footer>
